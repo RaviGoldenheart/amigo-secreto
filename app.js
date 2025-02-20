@@ -18,3 +18,7 @@ function addAmigo() {
 function updateAmigos(){
 
 }
+//sortAmigos irá sortear o amigo secreto dentro dos nomes no array 
+function sortAmigo(){
+    
+}
