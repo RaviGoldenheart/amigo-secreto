@@ -1,1 +1,11 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
+let amigos =[];
+
+function addAmigos() {
+    let amigos = document.getElementById(amigo);
+
+    }
+}
+//updateAmigos irá inserir os nomes dados ao addAmigos no array amigos.
+function updateAmigos(){
+
+}
