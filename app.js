@@ -1,9 +1,18 @@
 let amigos =[];
+let amigue = "";
 
-function addAmigos() {
-    let amigos = document.getElementById(amigo);
+function addAmigo() {
+    amigue = document.getElementById("amigo").value;
+    if(amigue == ""){
+        console.log('por favor, adicione um nome valido á lista');
+    } else {
+        amigos.push(amigue);
+        console.log(`adicionado ${amigue} á lista`);
+        console.log(amigos.length);
+        amigue = "";
+    } 
 
-
+    
 }
 //updateAmigos irá inserir os nomes dados ao addAmigos no array amigos.
 function updateAmigos(){
