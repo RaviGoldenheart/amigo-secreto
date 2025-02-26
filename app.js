@@ -9,6 +9,7 @@ function addAmigo() {
         amigos.push(amigue);
         console.log(`adicionado ${amigue} á lista`);
         console.log(amigos.length);
+        updateAmigos();
         amigue = "";
     } 
 
@@ -16,7 +17,12 @@ function addAmigo() {
 }
 //updateAmigos irá inserir os nomes dados ao addAmigos no array amigos.
 function updateAmigos(){
-
+    let listado = document.querySelector('#listaAmigos');
+    listado.innerHTML = null;
+    for(i = 0; i < amigos.length; i++){
+        listado.innerHTML += `<li> ${amigos[i]}</li>`;
+    }
+    
 }
 //sortAmigos irá sortear o amigo secreto dentro dos nomes no array 
 function sortAmigo(){
