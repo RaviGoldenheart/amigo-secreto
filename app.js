@@ -7,8 +7,6 @@ function addAmigo() {
         console.log('por favor, adicione um nome valido á lista');
     } else {
         amigos.push(amigue);
-        console.log(`adicionado ${amigue} á lista`);
-        console.log(amigos.length);
         updateAmigos();
         amigue = "";
     } 
