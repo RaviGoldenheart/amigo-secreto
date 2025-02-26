@@ -26,5 +26,12 @@ function updateAmigos(){
 }
 //sortAmigos irá sortear o amigo secreto dentro dos nomes no array 
 function sortAmigo(){
+    let sorteado = document.querySelector('#resultado');
+    if(amigos == [null]){
+        alert("por favor insira um nome!");
+    } else{
+        let sorteando = Math.floor(Math.random() * amigos.length);
+        sorteado.innerHTML = `<p>${amigos[sorteando]}</p>`;
     
+    }
 }
